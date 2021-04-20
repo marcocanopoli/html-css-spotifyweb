@@ -11,47 +11,57 @@
         <title>Spotify Web</title>
     </head>
     <body>
+        <div class="wrapper">
         <!-- main -->
         <main>
-            <!-- side navigator -->
-            <aside class="sidenav">
-                <div class="logo_box">
-                    <img src="img/logo.svg" alt="Spotify full logo">
-                </div>
-                
-                <!-- nav links -->
-                <ul>
-                    <li>
-                        <a href="#">   
-                            <img class="sidenav_icon" src="img/home.svg" alt="Home icon">
-                            Home
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <img class="sidenav_icon" src="img/search.svg" alt="Search icon">
-                            Cerca
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <img class="sidenav_icon" src="img/libreria.svg" alt="Library icon">
-                            La tua libreria
-                        </a>
-                    </li>
-                </ul>
-                <!-- /nav links -->
 
-                <!-- playlists -->
-                <span class="sidenav_title">Playlist</span>
-                <section class="playlists">
+            <!-- side navigation -->
+            <aside class="sidenav">
+                
+                <!-- nav_logo -->
+                <div class="nav_logo nav_single_item">
+                    <img id="logo_small" class="hidden-sm" src="img/logo-small.svg" alt="Spotify small logo">
+                    <img id="logo_full" class="hidden-xs" src="img/logo.svg" alt="Spotify full logo">
+                </div>
+                <!-- /nav_logo -->
+
+                <!-- nav_menu -->
+                <div class="nav_menu">
                     <ul>
-                        <li class="new_playlist" >
+                        <li>
+                            <a href="#">   
+                                <img class="nav_icon" src="img/home.svg" alt="Home icon">
+                                <span class="hidden-xs">Home</span>
+                            </a> 
+                        </li>
+                        <li>
                             <a href="#">
-                                <span class="sidenav_icon_box">
-                                    <i id="plus" class="fas fa-plus"></i>
-                                </span>
-                                    Crea Playlist
+                                <img class="nav_icon" src="img/search.svg" alt="Search icon">
+                                <span class="hidden-xs">Cerca</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img class="nav_icon" src="img/libreria.svg" alt="Library icon">
+                                <span class="hidden-xs">La tua libreria</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- /nav_menu -->
+
+                <!-- nav_playlists -->                
+                <div class="nav_playlists not_visible_xs">
+                    <ul>
+                        <li>
+                            <h3 class="nav_single_item">Playlist</h3>
+                        </li>
+                        <li>
+                            <a class="new_playlist" href="#">
+                                <div class="icon_box">
+                                    <i class="nav_icon fas fa-plus"></i>
+                                </div>
+                                Crea Playlist
                             </a>
                         </li>
                         <li>
@@ -74,50 +84,84 @@
                         </li>
                         <li>
                             <a href="#">Nome playlist</a>
-                        </li>                    
+                        </li>
                         <li>
                             <a href="#">Nome playlist</a>
-                        </li>                    
+                        </li>
                         <li>
                             <a href="#">Nome playlist</a>
-                        </li>                    
+                        </li>
+                        <li>
+                            <a href="#">Nome playlist</a>
+                        </li>
+                        <li>
+                            <a href="#">Nome playlist</a>
+                        </li>
                     </ul>
-                </section>
-                
-                <!-- /playlists -->
+                </div>
+                <!-- /nav_playlists -->
 
-                <!-- download app -->
-                <a id="download_app" href="#">
-                    <img src="img/download.svg" alt="Download icon">
-                    Installa app
-                    <div class="ul_separator"></div>
-                </a>
-                <!-- /download app -->
-                
-                <!-- user -->
-                <span id="user">
-                    <div class="sidenav_icon_box">
-                        <img src="img/profile.svg" alt="Profile icon">
-                    </div>                    
-                    John Doe
-                </span>
-                <!-- /user -->
+                <!-- nav_account -->
+                <div class="nav_account">                    
+                    <ul>
+                        <!-- download app -->
+                        <li id="download_app">
+                            <a href="#">
+                                <img class="nav_icon" src="img/download.svg" alt="Download icon">
+                                <span class="hidden-xs">Installa app</span>
+                            </a>
+                        </li>
+                        <!-- /download app -->
+
+                        <!-- user -->
+                        <li id="user">                            
+                            <div class="icon_box">
+                                <img class="nav_icon" src="img/profile.svg" alt="Profile icon">
+                            </div>                    
+                            <span class="hidden-xs">John Doe</span>
+                        </li>
+                    <!-- /user -->
+                    </ul>
+                </div>
+                <!-- /nav_account -->
 
             </aside>
-            <!-- /side navigator -->
+            <!-- /side navigation -->
 
             <!-- main content section -->
             <section class="main_content">
-                
+                <div class="top_bar">
+
+                </div>
             </section>
             <!-- /main content section -->
         </main>
         <!-- /main -->
-
+        
         <!-- footer -->
         <footer>
+            <!-- footer_left -->
+            <div class="footer_left">
+                
+            </div>
+            <!-- /footer_left -->
+
+            <!-- footer_middle -->
+            <div class="footer_middle">
+                
+            </div>
+            <!-- /footer_middle -->
+
+            <!-- footer_right -->
+            <div class="footer_right">
+                
+            </div>
+            <!-- /footer_right -->
             
         </footer>
         <!-- /footer -->
+
+    </div>
+
     </body>
 </html>

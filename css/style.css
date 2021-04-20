@@ -7,7 +7,7 @@
 
 body {
     font-family: 'Montserrat', sans-serif;
-    font-size: 1rem;
+    font-size: 0.9rem;
     color: #fff;
 }
 
@@ -17,55 +17,75 @@ ul {
 
 a {
     text-decoration: none;
-    color: #fff;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.wrapper {
+    width: 100%;
+    height: 100vh;
 }
 
 /* main */
 main {
     display: flex;
-    height: calc(100vh - 115px);
+    height: calc(100% - 100px);
 }
 
 /* sidenav */
 .sidenav {
     display: flex;
     flex-direction: column;
-    height: 100%;
-    width: 300px;
+    width: 230px;
     background-color: #000;
 }
 
-.sidenav > span.sidenav_title {
+/* sidenav styles */
+.sidenav h3 {
+    /* padding: 10px 10px; */
     font-size: 1.1rem;
     font-weight: 700;
     text-transform: uppercase;
     color: #fff;
 }
 
-.sidenav ul {
-    padding-bottom: 15px;
-}
-.sidenav a,
-.sidenav > span,
-.sidenav .logo_box {    
+/* .sidenav .nav_single_item:not(li) {  
     display: flex;
-    align-items: center;
-    padding: 8px 30px 8px 25px;
-    font-weight: 600;    
-    color: rgba(255, 255, 255, 0.5); 
-}
-
-.sidenav section {
-    display: flex;
-    flex-direction: column;
-}
+    align-items: center;   
+    padding: 10px 10px;
+} */
 
 .sidenav li {
-    border-left: 5px solid #000;
+    display: flex;
+    align-items: center;
+    padding: 10px 5px;
+    font-weight: 600;
+    border-left: 5px solid #000;    
+    border-right: 5px solid #000; 
+}       
+.sidenav li a {
+    display: flex;
+    align-items: center;
 }
+
+.sidenav .icon_box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 50px;    
+    margin-right: 10px;
+    background-color: rgba(255, 255, 255, 0.6);
+}
+.sidenav .nav_icon {
+    height: 30px;
+    margin-right: 10px;        
+}
+
+/* sidenav hover/active */
 .sidenav li:active {
-    border-color: #adff2f;
+    border-left-color: #adff2f;
 }
+
 .sidenav li:active img,
 .sidenav li:active a,
 .sidenav li:hover img,
@@ -74,110 +94,199 @@ main {
     opacity: 1;
 }
 
-.sidenav_icon_box {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 50px;
-    width: 50px;    
-    margin-right: 15px;
-    background-color: rgba(255, 255, 255, 0.6);
-}
-a:hover:not(#user) .sidenav_icon_box {
+.sidenav li:not(#user):active .icon_box,
+.sidenav li:not(#user):hover .icon_box {
     background-color: #fff;
-}
-#plus {
-    font-size: 30px;
-    color: #000;
-}
-
-.sidenav_icon {
-    height: 30px;
-    margin-right: 15px;
-    opacity: 0.6;
 }
 
 /* sidenav logo */
-.logo_box {
-    display: flex;  
+.nav_logo {
+    display: flex;
     align-items: center;
-    height: 115px;
+    flex-shrink: 0;
+    height: 100px;
+    padding: 10px 10px;
 }
-.logo_box img {
-    height: 70%;
-    max-width: 100%;
+#logo_small {
+    height: 30px;
+}
+#logo_full {
+    height: 40px;
+}
+
+.nav_menu {
+    min-height: 150px;    
+}
+.nav_menu .nav_icon {
+    opacity: 0.6;
 }
 
 /* playlists */
-.playlists {
+.nav_playlists {
+    flex-grow: 1;
     overflow-y: auto;
 }
-.sidenav .playlists ul li  a{
-    padding-top: 15px; 
-    padding-bottom: 15px; 
-} 
+
+.nav_playlists .nav_icon {
+    margin: 0;
+    font-size: 30px;
+    color: #000;
+}
 
 .new_playlist {
     font-size: 1.1rem;
 }
 
-/* download app */
-#download_app {
-    width: calc(100% - 60px);
-    margin-left: 30px;
-    padding-left: 0;    
-    padding-bottom: 15px;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.6);
-}
-#download_app:hover {
-    color: #fff;
-}
-#download_app:hover img{
-    color: #fff;
-    opacity: 1;
-}
-#download_app img {
-    height: 20px;
-    margin-right: 15px;
-    opacity: .6;
+/* account */
+.nav_account {
+    display: flex;
+    flex-direction: column;
 }
 
-/* user */
+/* #download_app */
+#download_app {
+    padding-bottom: 5;
+}
+#download_app a {
+    width: calc(100% - 20px);
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.6);
+}
+#download_app .nav_icon {
+    opacity: 0.6;
+}
+
+#download_app:hover .nav_icon {
+    opacity: 1;
+}
+
+/* #user */
 #user {
-    padding-top: 15px;
-    padding-bottom: 15px;
     font-size: 1.1rem;
     font-weight: 700;
-    color: #fff;
 } 
-#user div {
-    height: 35px;
-    width: 35px;
+#user .icon_box {
+    height: 30px;
+    width: 30px;
     border-radius: 50%;    
 }
 #user img {
-    height: 25px;
+    margin: 0;
+    height: 20px;
 }
 
 /* main content */
 .main_content {
-    height: 100%;
-    width: calc(100% - 300px);
+    width: calc(100% - 230px);
     background-color: blueviolet;
 }
 
+.top_bar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100px;
+    width: calc(100% - 230px);
+    background-color: rgba(0, 0, 0, 0.5);
+}
 
 /* footer */
 footer {
-    height: 120px;
-    background-color: crimson;
+    position: fixed;
+    bottom: 0;
+    left: 0;    
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+    width: 100%;
+    background-color: #282828;
+}
+
+.footer_left {
+    width: 230px;
+    background-color: seagreen;
+}
+
+.footer_middle {
+    width: 40%;
+    background-color: red;
+}
+
+.footer_right {
+    width: 230px;
+    background-color: seagreen;
 }
 
 /* media queries */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
 
-    .playlists {
+    .sidenav *.hidden-xs {
         display: none;
+    }
+    .sidenav *.not_visible_xs {
+        visibility: hidden;
+    }
+    /* side nav */
+    .sidenav {
+        width: 50px;
+    }
+
+    /* #download_app */
+    #download_app a {
+        border-bottom: none;
+    }
+
+    /* #user */ 
+    #user .icon_box {
+       margin-right: 0;   
+    }
+
+    /* main content */
+    .main_content {
+        width: calc(100% - 50px);
+    }
+
+    .top_bar {
+        width: calc(100% - 50px);
+    }
+
+    /* footer */
+    .footer_left,
+    .footer_right {
+        width: 30%;
+    }
+}
+
+@media screen and (min-width: 768px) {
+
+
+    .sidenav *.hidden-sm{
+        display: none;
+    }
+
+}
+@media screen and (max-height: 590px) {
+
+    /* nav_account */
+    /* .nav_account {
+        overflow-y: hidden;
+    } */
+    
+    #user {
+        display: none;
+    }
+    #download_app a {
+        padding-bottom: 0;
+        border-bottom: none;
+    }
+
+}
+@media screen and (max-height: 530px) {
+
+    /* nav_account */
+    #download_app {
+        display: none;
+        
     }
 
 }
