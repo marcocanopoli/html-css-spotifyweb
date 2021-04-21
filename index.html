@@ -18,48 +18,48 @@
             <!-- side navigation -->
             <aside class="sidenav">
                 
-                <!-- nav_logo -->
-                <div class="nav_logo nav_single_item">
+                <!-- sidenav_logo -->
+                <div class="sidenav_logo nav_single_item">
                     <img id="logo_small" class="hidden-sm" src="img/logo-small.svg" alt="Spotify small logo">
                     <img id="logo_full" class="hidden-xs" src="img/logo.svg" alt="Spotify full logo">
                 </div>
-                <!-- /nav_logo -->
+                <!-- /sidenav_logo -->
 
-                <!-- nav_menu -->
-                <div class="nav_menu">
+                <!-- sidenav_menu -->
+                <div class="sidenav_menu">
                     <ul>
                         <li>
                             <a href="#">   
-                                <img class="nav_icon" src="img/home.svg" alt="Home icon">
+                                <img class="sidenav_icon" src="img/home.svg" alt="Home icon">
                                 <span class="hidden-xs">Home</span>
                             </a> 
                         </li>
                         <li>
                             <a href="#">
-                                <img class="nav_icon" src="img/search.svg" alt="Search icon">
+                                <img class="sidenav_icon" src="img/search.svg" alt="Search icon">
                                 <span class="hidden-xs">Cerca</span>
                             </a>
                         </li>
                         <li>
                             <a href="#">
-                                <img class="nav_icon" src="img/libreria.svg" alt="Library icon">
+                                <img class="sidenav_icon" src="img/libreria.svg" alt="Library icon">
                                 <span class="hidden-xs">La tua libreria</span>
                             </a>
                         </li>
                     </ul>
                 </div>
-                <!-- /nav_menu -->
+                <!-- /sidenav_menu -->
 
-                <!-- nav_playlists -->                
-                <div class="nav_playlists not_visible_xs">
+                <!-- sidenav_playlists -->                
+                <div class="sidenav_playlists not_visible_xs">
                     <ul>
-                        <li>
-                            <h3 class="nav_single_item">Playlist</h3>
+                        <li class="sidenav_title">
+                            <h3>Playlist</h3>
                         </li>
                         <li>
                             <a class="new_playlist" href="#">
                                 <div class="icon_box">
-                                    <i class="nav_icon fas fa-plus"></i>
+                                    <i class="sidenav_icon fas fa-plus"></i>
                                 </div>
                                 Crea Playlist
                             </a>
@@ -87,15 +87,15 @@
                         </li>                        
                     </ul>
                 </div>
-                <!-- /nav_playlists -->
+                <!-- /sidenav_playlists -->
 
-                <!-- nav_account -->
-                <div class="nav_account">                    
+                <!-- sidenav_account -->
+                <div class="sidenav_account">                    
                     <ul>
                         <!-- download app -->
                         <li id="download_app">
                             <a href="#">
-                                <img class="nav_icon" src="img/download.svg" alt="Download icon">
+                                <img class="sidenav_icon" src="img/download.svg" alt="Download icon">
                                 <span class="hidden-xs">Installa app</span>
                             </a>
                         </li>
@@ -104,14 +104,14 @@
                         <!-- user -->
                         <li id="user">                            
                             <div class="icon_box">
-                                <img class="nav_icon" src="img/profile.svg" alt="Profile icon">
+                                <img class="sidenav_icon" src="img/profile.svg" alt="Profile icon">
                             </div>                    
                             <span class="hidden-xs">John Doe</span>
                         </li>
                     <!-- /user -->
                     </ul>
                 </div>
-                <!-- /nav_account -->
+                <!-- /sidenav_account -->
 
             </aside>
             <!-- /side navigation -->
@@ -119,9 +119,15 @@
             <!-- main content section -->
             <div class="main_content">
 
+                <!-- call to action -->
                 <div class="top_bar">
-                    <a class="btn">Effettua l'upgrade</a>
+                    <div class="btn">
+                        <div class="btn_left"></div>
+                        <a class="btn_middle">Effettua l'upgrade</a>
+                        <div class="btn_right"></div>
+                    </div>                    
                 </div>
+                <!-- /call to action -->
 
                 <!-- main menu -->
                 <nav>
@@ -150,109 +156,125 @@
                 <!-- /main menu -->
                 
                 <!-- recently played -->
-                <section class="main_section recently_played">
-                    <h2>Recently played</h2><div class="row_item">
-                        <img class="row_item_cover" src="img/metal_lifting.jpg" alt="Row item cover">
-                        <div class="row_item_text">
-                            <h3 class="row_item_title">Heavy Metal</h3>
-                            <span class="row_item_artist">Artist</span>
+                <section class="main_section">
+                    <h2>Recently played</h2>
+                    <div class="row">
+                        <div class="row_item">
+                            <img class="row_item_cover" src="img/metal_lifting.jpg" alt="Row item cover">
+                            <div class="row_item_text">
+                                <h3 class="row_item_title">Heavy Metal</h3>
+                                <span class="row_item_artist">Artist</span>
+                            </div>
                         </div>
-                    </div>
-
-                    <div class="row_item">
-                        <img class="row_item_cover" src="img/stranger.jpeg" alt="Row item cover">
-                        <div class="row_item_text">
-                            <h3 class="row_item_title">Stranger Things, Vol.1 (a Netflix Original Series Soundtrack)</h3>
-                            <span class="row_item_artist">Kyle Dixon & Michael Stein</span>
+    
+                        <div class="row_item">
+                            <img class="row_item_cover" src="img/stranger.jpeg" alt="Row item cover">
+                            <div class="row_item_text">
+                                <h3 class="row_item_title">Stranger Things, Vol.1 (a Netflix Original Series Soundtrack)</h3>
+                                <span class="row_item_artist">Kyle Dixon & Michael Stein</span>
+                            </div>
                         </div>
-                    </div>
-                    <div class="row_item">
-                        <img class="row_item_cover" src="img/aquietplace.jpeg" alt="Row item cover">
-                        <div class="row_item_text">
-                            <h3 class="row_item_title">A quiet place</h3>
-                            <span class="row_item_artist">Artist</span>
+                        <div class="row_item">
+                            <img class="row_item_cover" src="img/aquietplace.jpeg" alt="Row item cover">
+                            <div class="row_item_text">
+                                <h3 class="row_item_title">A quiet place</h3>
+                                <span class="row_item_artist">Artist</span>
+                            </div>
                         </div>
-                    </div>
-                    <div class="row_item">
-                        <img class="row_item_cover" src="img/split.jpeg" alt="Row item cover">
-                        <div class="row_item_text">
-                            <h3 class="row_item_title">Split</h3>
-                            <span class="row_item_artist">Artist</span>
+                        <div class="row_item">
+                            <img class="row_item_cover" src="img/split.jpeg" alt="Row item cover">
+                            <div class="row_item_text">
+                                <h3 class="row_item_title">Split</h3>
+                                <span class="row_item_artist">Artist</span>
+                            </div>
                         </div>
-                    </div>
-                    <div class="row_item">
-                        <img class="row_item_cover" src="img/cure.jpeg" alt="Row item cover">
-                        <div class="row_item_text">
-                            <h3 class="row_item_title">A cure for wellness</h3>
-                            <span class="row_item_artist">Artist</span>
+                        <div class="row_item">
+                            <img class="row_item_cover" src="img/cure.jpeg" alt="Row item cover">
+                            <div class="row_item_text">
+                                <h3 class="row_item_title">A cure for wellness</h3>
+                                <span class="row_item_artist">Artist</span>
+                            </div>
                         </div>
-                    </div>
-                    <div class="row_item">
-                        <img class="row_item_cover" src="img/sinister.jpeg" alt="Row item cover">
-                        <div class="row_item_text">
-                            <h3 class="row_item_title">Sinister</h3>
-                            <span class="row_item_artist">Artist</span>
+                        <div class="row_item">
+                            <img class="row_item_cover" src="img/sinister.jpeg" alt="Row item cover">
+                            <div class="row_item_text">
+                                <h3 class="row_item_title">Sinister</h3>
+                                <span class="row_item_artist">Artist</span>
+                            </div>
                         </div>
-                    </div>
-                    <div class="row_item">
-                        <img class="row_item_cover" src="img/cure.jpeg" alt="Row item cover">
-                        <div class="row_item_text">
-                            <h3 class="row_item_title">A cure for wellness</h3>
-                            <span class="row_item_artist">Artist</span>
+                        <div class="row_item">
+                            <img class="row_item_cover" src="img/aquietplace.jpeg" alt="Row item cover">
+                            <div class="row_item_text">
+                                <h3 class="row_item_title">A quiet place</h3>
+                                <span class="row_item_artist">Artist</span>
+                            </div>
                         </div>
-                    </div>
-                    <div class="row_item">
-                        <img class="row_item_cover" src="img/sinister.jpeg" alt="Row item cover">
-                        <div class="row_item_text">
-                            <h3 class="row_item_title">Sinister</h3>
-                            <span class="row_item_artist">Artist</span>
+                        <div class="row_item">
+                            <img class="row_item_cover" src="img/split.jpeg" alt="Row item cover">
+                            <div class="row_item_text">
+                                <h3 class="row_item_title">Split</h3>
+                                <span class="row_item_artist">Artist</span>
+                            </div>
+                        </div>
+                        <div class="row_item">
+                            <img class="row_item_cover" src="img/cure.jpeg" alt="Row item cover">
+                            <div class="row_item_text">
+                                <h3 class="row_item_title">A cure for wellness</h3>
+                                <span class="row_item_artist">Artist</span>
+                            </div>
                         </div>
                     </div>
                 </section>
                 <!-- /recently played -->
 
                 <!-- for you -->
-                <section class="main_section ">
+                <section class="main_section">
                     <h2>Creato per John Doe</h2>
                     <h4>Più ascolti, più accurati saranno i suggerimenti.</h4>
-                    <div class="row_item">
-                        <img class="row_item_cover" src="img/radar.jpeg" alt="Row item cover">
-                        <div class="row_item_text">
-                            <h3 class="row_item_title">Release Radar</h3>
+                    <div class="row">
+                        <div class="row_item">
+                            <img class="row_item_cover" src="img/radar.jpeg" alt="Row item cover">
+                            <div class="row_item_text">
+                                <h3 class="row_item_title">Release Radar</h3>
+                            </div>
                         </div>
-                    </div>
-
-                    <div class="row_item">
-                        <img class="row_item_cover" src="img/mixdaily.jpeg" alt="Row item cover">
-                        <div class="row_item_text">
-                            <h3 class="row_item_title">Daily Mix 1</h3>
+    
+                        <div class="row_item">
+                            <img class="row_item_cover" src="img/mixdaily.jpeg" alt="Row item cover">
+                            <div class="row_item_text">
+                                <h3 class="row_item_title">Daily Mix 1</h3>
+                            </div>
                         </div>
                     </div>
                 </section>
                 <!-- /for you -->
 
                 <!-- popular artist -->
-                <section class="main_section round_cover">
+                <section class="main_section">
                     <h2>Artisti più popolari</h2>
                     <h4>Più ascolti, più accurati saranno i suggerimenti.</h4>
-                    <div class="row_item">
-                        <img class="row_item_cover" src="img/youg.jpeg" alt="Row item cover">
-                        <div class="row_item_text">
-                            <h3 class="row_item_title">Release Radar</h3>
+                    <div class="row">
+                        <div class="row_item">
+                            <img class="row_item_cover artist_cover" src="img/youg.jpeg" alt="Row item cover">
+                            <div class="row_item_text">
+                                <h3 class="row_item_title">Lana Del Rey</h3>
+                            </div>
+                        </div>
+    
+                        <div class="row_item">
+                            <img class="row_item_cover artist_cover" src="img/einaudi.jpeg" alt="Row item cover">
+                            <div class="row_item_text">
+                                <h3 class="row_item_title">Ludovico Einaudi</h3>
+                            </div>
                         </div>
                     </div>
-
-                    <div class="row_item">
-                        <img class="row_item_cover" src="img/einaudi.jpeg" alt="Row item cover">
-                        <div class="row_item_text">
-                            <h3 class="row_item_title">Daily Mix 1</h3>
-                        </div>
-                    </div>
+                    
                 </section>
                 <!-- /popular artist -->
 
             </div>
             <!-- /main content section -->
+
         </main>
         <!-- /main -->
         
@@ -290,7 +312,7 @@
                     <div>
                         <i class="fas fa-step-backward"></i>
                     </div>
-                    <div>
+                    <div class="play_button">
                         <i class="fas fa-play"></i>
                     </div>
                     <div>
