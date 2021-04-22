@@ -10,7 +10,6 @@ body {
     color: #fff;
 }
 h2 {
-    padding-top: 30px;
     padding-bottom: 15px;
     font-size: 24px;
 }
@@ -336,6 +335,13 @@ main {
 }
 
 /* main sections */
+.main_section {
+    padding-top: 30px;
+}
+.main_section:last-of-type {
+    padding-bottom: 30px;
+}
+
 .row {
     display: flex;
     flex-flow: row wrap;
@@ -350,7 +356,7 @@ main {
     font-size: 0;
     overflow: hidden;
 }
-.row_item_cover.artist_cover {
+.row_item_cover.round_cover {
     border-radius: 50%;
 }
 .row_item_cover img {
@@ -362,14 +368,14 @@ main {
     text-align: center;
 }
 .row_item_title {
-    padding-bottom: 15px;
+    padding-bottom: 10px;
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;    
 }
 .row_item_subtitle {
     display: block;
-    padding-bottom: 15px;
+    padding-bottom: 10px;
     color: rgba(255, 255, 255, 0.5);
     text-overflow: ellipsis;
     white-space: nowrap;
@@ -743,7 +749,7 @@ footer i:hover {
     .row_item_cover img {
         width: 75%;
     }
-    .row_item_cover.artist_cover img {
+    .row_item_cover.round_cover img {
         border-radius: 50%;
     }
 
@@ -752,7 +758,7 @@ footer i:hover {
         width: 75%;
         transform: translateX(16.6666%);
     }
-    .row_item_cover.artist_cover:hover:before {
+    .row_item_cover.round_cover:hover:before {
         border-radius: 50%;
     }
 
