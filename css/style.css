@@ -161,8 +161,9 @@ main {
     color: #fff;
     opacity: 1;
 }
+
 .sidenav li:not(#user):active .icon_box,
-.sidenav li:not(#user) a:hover .icon_box {
+.sidenav li a:hover .icon_box {
     background-color: #fff;
 }
 
@@ -438,6 +439,9 @@ footer i:hover {
     height: 60%;
     max-width: 100%;
     margin-right: 10px;
+}
+.track_cover:hover {
+    cursor: pointer;
 }
 
 .track_text {
