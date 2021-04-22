@@ -361,11 +361,17 @@ main {
 }
 .row_item_subtitle {
     padding-bottom: 15px;
-    font-weight: 600;
     color: rgba(255, 255, 255, 0.5);
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;     
+}
+.row_item_title:hover,
+.row_item_subtitle:hover {
+    text-decoration: underline;
+    font-weight: 700;
+    color: #fff;
+    cursor: pointer;
 }
 
 /* overlay */
@@ -697,7 +703,7 @@ footer i:hover {
 
 }
 
-/* full sidebar with */
+/* full sidebar width */
 @media screen and (min-width: 737px) {
 
     #logo_small{
