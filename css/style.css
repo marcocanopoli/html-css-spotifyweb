@@ -413,6 +413,12 @@ footer i:hover {
     padding: 10px 5px 10px;
 }
 
+.footer_middle i:hover,
+.footer_right i:hover {
+    text-shadow: 0 0 3px #000, 0 0 5px #000, 0 0 5px #fff;
+    cursor: pointer;
+}
+
 
 /* footer left */
 .footer_left {
@@ -477,14 +483,12 @@ footer i:hover {
     padding: 0 5px;
     font-size: 16px;    
 }
+
 #my_play_button {
     font-size: 26px;
 }
 #my_play_button:hover {
     transform: scale(130%);
-}
-#player_controls i:hover {
-    cursor: pointer;
 }
 
 .player_progress {
@@ -502,6 +506,9 @@ footer i:hover {
     padding-right: 15px;
     font-size: 14px;
     color: #fff;
+}
+.footer_right i:hover {
+    transform: scale(120%);
 }
 
 .actions {
