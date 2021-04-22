@@ -338,9 +338,9 @@ main {
 .main_section {
     padding-top: 30px;
 }
-.main_section:last-of-type {
+/* .main_section:last-of-type {
     padding-bottom: 30px;
-}
+} */
 
 .row {
     display: flex;
@@ -409,6 +409,7 @@ main {
 /* footer */
 footer {
     position: fixed;
+    bottom: 0;
     display: flex;
     justify-content: space-between;
     height: 90px;
